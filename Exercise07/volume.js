@@ -1,14 +1,20 @@
-let width = prompt('What is the width of the box?');
-message1 = width >= 0 ? 'Valid' : 'Input is invalid';
-console.log(message1);
+let width;
+while (width <= 0 || isNaN(width)) {
+  width = prompt('What is the width of the box?');
+}
+console.log(`${width} is valid`);
 
-let height = prompt('What is the height of the box?');
-message2 = height >= 0 ? 'Valid' : 'Input is invalid';
-console.log(message2);
+let height;
+while (height <= 0 || isNaN(height)) {
+  height = prompt('What is the height of the box?');
+}
+console.log(`${height} is valid`);
 
-let length = prompt('What is the length of the box?');
-message3 = length >= 0 ? 'Valid' : 'Input is invalid';
-console.log(message3);
+let length;
+while (length <= 0 || isNaN(length)) {
+  length = prompt('What is the length of the box?');
+}
+console.log(`${length} is valid`);
 
 let volume = width * height * length;
 
