@@ -25,3 +25,18 @@ console.log(`${str} [${typeof str}]`);
 console.log(`${s1} [${typeof s1}]`);
 
 console.log(`${num2} [${typeof num2}]`);
+
+let str2 = '1234';
+let s2 = String(str2);
+let n2 = Number(s2);
+let bi2 = BigInt(n2);
+let b2 = Boolean(bi2);
+
+console.log(`${typeof str2} : ${str2}`);
+console.log(`${typeof s2} : ${s2}`);
+console.log(`${typeof n2} : ${n2}`);
+console.log(`${typeof bi2} : ${bi2}`);
+console.log(`${typeof b2} : ${b2}`);
+
+let chain = Boolean(BigInt(Number('1234')));
+console.log(`${typeof chain} : ${chain}`);
